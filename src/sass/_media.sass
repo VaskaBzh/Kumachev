@@ -1,0 +1,289 @@
+@media screen and ( max-width: 1440px )
+    .materials
+        .container
+            .projects
+                &__list
+                    grid-template-columns: 1fr 1fr
+                &__card
+                    margin: 0.5rem auto
+
+@media screen and ( max-width: 1300px )
+    .materials
+        &__block
+            flex-direction: column
+            align-items: center
+        &__groups
+            max-width: 100%
+            box-shadow: none
+        &__group
+            width: 100%
+        &__tabs
+            max-width: 100%
+            margin: 0 3rem 0 0
+        .container
+            .projects
+                &__list
+                    grid-template-columns: 1fr 1fr 1fr
+                &__card
+                    margin-bottom: 2.36rem
+
+@media screen and ( max-width: 1200px )
+    html
+        font-size: 13px
+    .container
+        width: 95%
+    .business
+        .projects
+            &__card
+                img
+                    height: 257px
+            &__status
+                img
+                    height: 20px
+    .private
+        .projects
+            &__card
+                img
+                    height: 257px
+            &__status
+                img
+                    height: 20px
+
+@media screen and ( max-width: 1100px )
+    .row
+        flex-wrap: wrap
+    .business
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+    .private
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+    .projects
+        &__title
+            width: 100%
+            text-align: center
+        &__list
+            justify-content: space-around
+        &__header
+            max-width: 98%
+            flex-wrap: nowrap
+            &_all
+                .projects
+                    &__head
+                        margin-right: 1rem
+        &__status
+            max-width: 50%
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+    .materials
+        .container
+            .projects
+                &__list
+                    grid-template-columns: 1fr 1fr
+    .about
+        &__block
+            max-width: 100%
+        &__slider
+            margin: 1rem auto 0 
+    .header
+        &__modal
+            .navigation
+                justify-content: flex-start
+                &__links
+                    margin: 0 auto 1rem 1rem
+                    &:nth-last-child(1)
+                        margin-left: 0
+                        margin-top: 1rem
+    .footer
+        .navigation
+            justify-content: flex-start
+            &__links
+                margin: 0 1rem 0 auto
+                &:nth-last-child(1)
+                    margin-right: 0
+                    margin-top: 1rem
+    .navigation
+        &__group
+            width: 100%
+            flex-direction: row
+            justify-content: space-between
+            margin-top: 1rem
+            .navigation
+                &__links
+                    margin: 0 auto 0 0
+    .garant
+        .modal
+            height: 90vh
+            overflow-y: scroll
+            &__text
+                margin-bottom: 1rem
+            img
+                max-width: 100%
+
+@media screen and ( max-width: 1000px )
+    .map
+        .row
+            max-width: 1170px
+            width: 95%
+            margin: auto
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+        &__text
+            font-size: 1.8rem
+        &__block
+            margin-bottom: 1rem
+            max-width: 100%
+        &__use
+            max-width: 100%
+
+@media screen and ( max-width: 740px )
+    .materials
+        .container
+            .projects
+                &__list
+                    grid-template-columns: 1fr
+                
+@media screen and ( max-width: 720px )
+    .map
+        &__block
+            padding-left: 0
+    .modal
+        width: 95%
+    .mobile 
+        &_on
+            display: inline-flex
+    .navigation
+        &__group
+            width: auto
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-start
+            width: 100%
+        &__links
+            margin: 1rem 0 0
+            width: 100%
+        &__logo
+            width: 100%
+            align-items: flex-start
+            margin-bottom: 1rem
+        &__head
+            margin-bottom: 1rem
+        &__block
+            margin-bottom: 1rem
+    .header
+        &__modal
+            overflow-y: scroll
+            .navigation
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
+                &__block
+                    display: none
+    .footer
+        .nav
+            margin: 2.5rem 0 0.64rem
+        .navigation
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            &__block
+                display: none
+
+@media screen and ( max-width: 640px)
+    .map
+        &__use
+            height: 500px
+        &__text
+            font-size: 1.5rem
+    .form
+        width: 95%
+    .modal
+        padding: 7.14rem 0 7.86rem
+        &__title
+            max-width: 90%
+            margin: 0 auto
+        &__block
+            max-width: 90%
+            margin: 1rem auto 0
+        .form
+            .modal
+                &__title
+                    max-width: 100%
+                &__block
+                    max-width: 100%
+                    margin: 0 auto
+    .about
+        padding: 5.5rem 0
+        &__slider
+            max-width: 100%
+    .header
+        height: 38rem
+        .slide
+            padding: 1rem 0 0
+        &__message
+            bottom: -40%
+    .call
+        padding: 3.2rem 0 5.5rem
+        &__title
+            align-items: center
+    .section
+        &__title
+            line-height: 120%
+
+@media screen and ( max-width: 560px )
+    .map
+        &__use
+            height: 400px
+        &__text
+            font-size: 1.3rem
+    .about
+        &__slider
+            height: 305px
+        .slide
+            top: 50%
+            transform: translate(-50%, -50%)
+
+@media screen and ( max-width: 460px )
+    .map
+        &__use
+            height: 300px
+    .about
+        &__slider
+            height: 250px
+    .header
+        &__head
+            flex-direction: column
+            align-items: center
+        &__nav
+            margin-top: 1rem
+        &__search
+            margin-top: 1rem
+        &__title
+            line-height: 120%
+    .support
+        &__title
+            text-align: center
+        &__text
+            text-align: center
+
+@media screen and ( max-width: 375px )
+    .about
+        &__slider
+            height: 230px
+    .header
+        &__message
+            bottom: -10%
+
+@media screen and ( max-width: 320px )
+    .about
+        &__slider
+            height: 200px

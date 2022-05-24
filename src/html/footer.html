@@ -1,0 +1,110 @@
+<footer class="seciont footer">
+    <div class="navigation row container">
+        <div class="col footer__block navigation__logo">
+            <a href="#" class="footer__logo"><img src="@img/logo-footer.svg" alt="logo"></a>
+            <div class="nav row">
+                <a id="whatsapp" href="https://wa.me/+79034607702" class="nav__element"><img src="@img/whatsapp.svg" alt="whatsapp"></a>
+                <a id="telephone" href="tel:+79896261799" class="nav__element"><img src="@img/phone.svg" alt="telephone"></a>
+            </div>
+            <p class="navigation__link">©2022 ИП Кумачев Игорь Валериевич</p>
+        </div>
+        @@if (swiper == "main") {
+            <div class="col navigation__links footer__navigation">
+                <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="#main" class="navigation__link">Главная</a>
+                    <a href="#about" class="navigation__link">О нас</a>
+                    <a href="#projects" class="navigation__link">Проекты</a>
+                    <a href="./contacts.html" class="navigation__link">Контакты</a>
+                    <a href="./faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                </div>
+            </div>
+        }
+        @@if (swiper == "private" || swiper == "true") {
+            <div class="col navigation__links footer__navigation">
+                <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="./index.html" class="navigation__link">Главная</a>
+                    <a href="./index.html" class="navigation__link">О нас</a>
+                    <a href="./projects.html" class="navigation__link">Проекты</a>
+                    <a href="./contacts.html" class="navigation__link">Контакты</a>
+                    <a href="./faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                </div>
+            </div>
+        }
+        @@if (swiper == "business") {
+            <div class="col navigation__links footer__navigation">
+                <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="./index.html" class="navigation__link">Главная</a>
+                    <a href="./index.html" class="navigation__link">О нас</a>
+                    <a href="./projects.html" class="navigation__link">Проекты</a>
+                    <a href="./contacts.html" class="navigation__link">Контакты</a>
+                    <a href="./faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                </div>
+            </div>
+        }
+        @@if (swiper == "projects") {
+            <div class="col navigation__links footer__navigation">
+                <p class="navigation__head mobile_on">Навигация:<symbol id="icon-1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"></symbol><img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="./index.html" class="navigation__link">Главная</a>
+                    <a href="./index.html" class="navigation__link">О нас</a>
+                    <a href="#projects" class="navigation__link">Проекты</a>
+                    <a href="./contacts.html" class="navigation__link">Контакты</a>
+                    <a href="./faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                </div>
+            </div>
+        }
+        <div class="col navigation__links">
+            <p class="navigation__head">Для бизнеса: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+            <div class="navigation__block col">
+                <a href="./business.html" class="navigation__link">Проекты</a>
+                <a href="./business.html" class="navigation__link">Материалы</a>
+                <a href="./faq.html" class="navigation__link">FAQ</a>
+                <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                <a href="#" id="consultate" class="navigation__link">On-line консультация</a>
+                <a href="#" id="garant" class="navigation__link">Гарантийные обязательства</a>
+                <a href="./service.html" class="navigation__link">Услуги</a>
+                <a href="./support.html" class="navigation__link">Юридическое сопровождение</a>
+            </div>
+        </div>
+        <div class="col navigation__links">
+            <p class="navigation__head">Частным клиентам: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+            <div class="navigation__block col">
+                <a href="./private.html" class="navigation__link">Проекты</a>
+                <a href="./private.html" class="navigation__link">Материалы</a>
+                <a href="./faq.html" class="navigation__link">FAQ</a>
+                <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                <a href="#" id="garant" class="navigation__link">Гарантийные обязательства</a>
+                <a href="./private-service.html" class="navigation__link">Услуги</a>
+            </div>
+        </div>
+        <div class="col navigation__group">
+            <div class="col navigation__links footer__navigation_fonts">
+                <a href="./key.html" class="navigation__head navigation__head_big">Отделка помещений «под ключ» <span>new</span>:</a>
+                <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>) 
+                </a>
+                <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                <a href="#" id="design" class="navigation__link">Заказать дизайн</a>
+                <a href="#" class="navigation__link">Подбор квалифицированного персонала</a>
+                <a href="./materials.html" class="navigation__link">Помощь в выборе материалов</a>
+            </div>
+            <div class="col navigation__links">
+                <p class="navigation__head">Сметы и расчеты: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                    <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                    <a href="#" class="navigation__link">Пример расчета</a>
+                    <a href="#" id="prices" class="navigation__link">Прозрачность ценообразования</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

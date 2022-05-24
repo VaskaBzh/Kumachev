@@ -1,0 +1,191 @@
+<header class="header" id="main">
+    <div class="header__navbar">
+        <div class="row header__head container">
+            <a href="./index.html" class="header__logo"><img src="@img/logo.svg" alt="logo"></a>
+            <div class="header__nav nav row">
+                <a id="telephone" href="tel:+79896261799" class="nav__element"><img src="@img/phone.svg" alt="tele"></a>
+                <a id="search" href="#" class="nav__element"><img src="@img/search.svg" alt="search"></a>
+                <a id="burger" href="#" class="nav__element"><img src="@img/burger.svg" alt="menu"></a>
+            </div>
+        </div>
+    </div>
+    @@if (swiper == "true" || swiper == "main" || swiper == "projects") {
+        <div class="slide slide_active">
+            <div class="col header__hero container">
+                <h2 class="header__title">Lorem ipsum dolor</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="col header__hero container">
+                <h2 class="header__title">Частным клиентам</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="col header__hero container">
+                <h2 class="header__title">для бизнеса</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button id="consultate" class="button button_primary header__button">on-line консультация</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="col header__hero container">
+                <h2 class="header__title">ОТДЕЛКА ПОД КЛЮЧ</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="col header__hero container">
+                <h2 class="header__title">СМеты И ПРОЕКТЫ</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+    }
+    @@if (swiper == "private") {
+        <div class="slide slide_active">
+            <div class="col header__hero container">
+                <h2 class="header__title">Частным клиентам</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+    }
+    @@if (swiper == "key") {
+        <div class="slide slide_active">
+            <div class="col header__hero container">
+                <h2 class="header__title">ОТДЕЛКА ПОД КЛЮЧ</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button class="button button_primary header__button">ЗАКАЗАТЬ СМЕТУ</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+    }
+    @@if (swiper == "business") {
+        <div class="slide slide_active">
+            <div class="col header__hero container">
+                <h2 class="header__title">для бизнеса</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <button id="consultate" class="button button_primary header__button">on-line консультация</button>
+                <a href="https://wa.me/+79034607702" class="header__message"><img src="@img/chat.svg" alt="message"></a>
+            </div>
+        </div>
+    }
+    <!-- burger menu -->
+    <div class="header__modal">
+        <div class="row header__head container">
+            <a href="index.html" class="header__logo"><img src="@img/logo.svg" alt="logo"></a>
+            <input type="text" class="header__search">
+        </div>
+        <div class="navigation row container">
+            @@if (swiper == "private" || swiper == "key" || swiper == "business") {
+                <div class="col navigation__links">
+                    <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                    <div class="navigation__block col">
+                        <a href="index.html" class="navigation__link">Главная</a>
+                        <a href="index.html" class="navigation__link">О нас</a>
+                        <a href="projects.html" class="navigation__link">Проекты</a>
+                        <a href="contacts.html" class="navigation__link">Контакты</a>
+                        <a href="faq.html" class="navigation__link">FAQ</a>
+                        <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                    </div>
+                </div>
+            }
+            @@if (swiper == "projects" || swiper == "true") {
+                <div class="col navigation__links">
+                    <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                    <div class="navigation__block col">
+                        <a href="index.html" class="navigation__link">Главная</a>
+                        <a href="index.html" class="navigation__link">О нас</a>
+                        <a href="projects.html" class="navigation__link">Проекты</a>
+                        <a href="contacts.html" class="navigation__link">Контакты</a>
+                        <a href="faq.html" class="navigation__link">FAQ</a>
+                        <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                    </div>
+                </div>
+            }
+            @@if (swiper == "main") {
+                <div class="col navigation__links">
+                    <p class="navigation__head mobile_on">Навигация:<img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                    <div class="navigation__block col">
+                        <a href="#main" class="navigation__link">Главная</a>
+                        <a href="#about" class="navigation__link">О нас</a>
+                        <a href="#projects" class="navigation__link">Проекты</a>
+                        <a href="contacts.html" class="navigation__link">Контакты</a>
+                        <a href="faq.html" class="navigation__link">FAQ</a>
+                        <a href="#" id="applicants" class="navigation__link">Соискатели</a>
+                    </div>
+                </div>
+            }
+            <div class="col navigation__links">
+                <p class="navigation__head">Для бизнеса: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="business.html" class="navigation__link">Проекты</a>
+                    <a href="business.html" class="navigation__link">Материалы</a>
+                    <a href="faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                    <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                    <a href="#" id="consultate" class="navigation__link">On-line консультация</a>
+                    <a href="#" id="garant" class="navigation__link">Гарантийные обязательства</a>
+                    <a href="services.html" class="navigation__link">Услуги</a>
+                    <a href="support.html" class="navigation__link">Юридическое сопровождение</a>
+                </div>
+            </div>
+            <div class="col navigation__links">
+                <p class="navigation__head">Частным клиентам: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="private.html" class="navigation__link">Проекты</a>
+                    <a href="private.html" class="navigation__link">Материалы</a>
+                    <a href="faq.html" class="navigation__link">FAQ</a>
+                    <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                    <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                    <a href="#" id="garant" class="navigation__link">Гарантийные обязательства</a>
+                    <a href="service.html" class="navigation__link">Услуги</a>
+                </div>
+            </div>
+            <div class="col navigation__links">
+                <a href="key.html" class="navigation__head navigation__head_big">Отделка помещений «под ключ» <span>new</span>:</a>
+                <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                <a href="#" id="design" class="navigation__link">Заказать дизайн</a>
+                <a href="#" class="navigation__link">Подбор квалифицированного персонала</a>
+                <a href="materials.html" class="navigation__link">Помощь в выборе материалов</a>
+            </div>
+            <div class="col navigation__links">
+                <p class="navigation__head">Сметы и расчеты: <img src="@img/list-arrow.svg" alt="arrow" class="mobile_on"> </p>
+                <div class="navigation__block col">
+                    <a href="#" id="order" class="navigation__link">Заказать смету</a>
+                    <a href="#" id="master" class="navigation__link">Заявка на выезд специалиста (<span>free</span>)</a>
+                    <a href="#" class="navigation__link">Пример расчета</a>
+                    <a href="#" id="prices" class="navigation__link">Прозрачность ценообразования</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

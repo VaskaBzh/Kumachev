@@ -1,0 +1,42 @@
+.button
+    color: $light
+    cursor: pointer
+    max-width: 245px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 3px solid $primary
+    outline: none
+    transition-duration: 300ms
+    text-transform: uppercase
+    &_primary
+        background: $primary
+        &:hover
+            background: transparent
+            color: $primary
+    &_secondary
+        background: transparent
+        border: 3px solid $primary
+        color: $primary
+        &:hover
+            background: $primary
+            color: $light
+.form
+    max-width: 48.07rem
+    width: 100%
+    margin: 0 auto
+    ._error
+        box-shadow: 0 0 8px 1px red
+    &__input
+        width: 100%
+        padding: 1.72rem 0 1.71rem 2.57rem
+        border: 2px solid rgba($dark, 0.65)
+        color: $dark
+        font-weight: 400
+        font-size: 1.07rem
+        line-height: 1.29rem
+        margin-bottom: 1.36rem
+        outline: none
+        &:placeholder
+            color: rgba($dark, 0.5)
