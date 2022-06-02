@@ -40,7 +40,8 @@ const slider = (block, slide, arrows) => {
 
         if (arrows == 'arrows') {
             if (!e.target.closest('.about__arrow')) {
-                return
+                stopSlide()
+                startSlide(timeInterval)
             }
         }
 

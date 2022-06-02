@@ -68,7 +68,9 @@ const modal = () => {
         btn.addEventListener('click', modalUsingApplicants)
     })
     openHeaderBtns.forEach((btn, i) => {
-        btn.addEventListener('click', modalUsingMain)
+        if (btn.textContent != 'on-line консультация') {
+            btn.addEventListener('click', modalUsingMain)
+        }
     })
     openMasterBtns.forEach((btn, i) => {
         btn.addEventListener('click', modalUsingMaster)

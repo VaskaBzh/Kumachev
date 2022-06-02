@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title": "О материале",
+        "script": "js/appProject.min.js"
+    })
+    <body>
+        @@include('html/header.html', {
+            "swiper": "true"
+        })
+        <main>
+            <section class="section about project material" id="about">
+                <div class="container row">
+                    <div class="about__slider row">
+                        <a href="#" class="about__arrow" id="arrow-left"><img src="@img/left.svg" alt="left"></a>
+                        <img src="@img/inside3.1.jpg" alt="slide" class="slide slide_active">
+                        <img src="@img/inside3.2.png" alt="slide" class="slide">
+                        <img src="@img/inside3.3.jpg" alt="slide" class="slide">
+                        <img src="@img/inside3.4.png" alt="slide" class="slide">
+                        <img src="@img/inside3.5.png" alt="slide" class="slide">
+                        <img src="@img/inside3.6.png" alt="slide" class="slide">
+                        <a href="#" class="about__arrow" id="arrow-right"><img src="@img/right.svg" alt="right"></a>
+                    </div>
+                    <div class="about__block col">
+                        <h2 class="about__title section__title">декоративные штукатурки</h2>
+                        <p class="about__text">Акриловые штукатурки<br>
+                            Интерьерные штукатурки<br>
+                            Силиконовые штукатурки<br>
+                            Минеральные штукатурки<br>
+                            На мраморной крошке<br>
+                            Текстурные мастики<br>
+                            </p>
+                    </div>
+                </div>
+                <!-- /.container row -->
+            </section>
+            <!-- /.section about -->
+        </main>
+        @@include('html/footer.html', {
+            "swiper": "true"
+        })
+
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "applicants",
+            "title": "ВАКАНСИИ:"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "consultate",
+            "title": "on-line консультация:"
+        })
+        @@include('html/modal.html', {
+            "services": "master",
+            "otherClass": "master",
+            "title": "Вызовите специалиста сейчас"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "prices",
+            "title": "Прозрачность ценообразования"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "garant",
+            "title": "Гарантийные обязательства"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "design",
+            "title": "ЗАДАЙТЕ ЛЮБЫЕ ИНТЕРЕСУЮЩИЕ ВАС ВОПРОСЫ О ФАСАДЕ И ВСЕХ УСЛУГАХ НАШЕЙ КОМПАНИИ"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "thanks",
+            "title": "спасибо за Ваш выбор! наши специалисты свяжутся с Вами!"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "main",
+            "title": false
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "firstModal",
+            "title": "ЗАКАЖИТЕ СМЕТУ ПРЯМО СЕЙЧАС!"
+        })
+        @@include('html/modal.html', {
+            "services": true,
+            "otherClass": "secondModal",
+            "title": "ЗАКАЖИТЕ СМЕТУ ПРЯМО СЕЙЧАС!"
+        })
+    </body>
+</html>

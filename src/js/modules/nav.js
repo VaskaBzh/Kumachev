@@ -10,7 +10,8 @@ const nav = () => {
                 navHeads.forEach((head, i) => {
                     if (i < 3) {
                         head.querySelector('img').style = 'transform: rotate(180deg)'
-                        head.addEventListener('click', () => {
+                        head.addEventListener('click', (e) => {
+                            e.preventDefault()
                             if (head.querySelector('img').getAttribute('style') == "transform: rotate(180deg);") {
                                     navLists[i].style.display = 'flex'
                                     head.querySelector('img').style = 'transform: rotate(0)'
@@ -21,7 +22,8 @@ const nav = () => {
                         })
                     } else if (i > 3) {
                         head.querySelector('img').style = 'transform: rotate(180deg)'
-                        head.addEventListener('click', () => {
+                        head.addEventListener('click', (e) => {
+                            e.preventDefault()
                             if (head.querySelector('img').getAttribute('style') == "transform: rotate(180deg);") {
                                     navLists[i - 1].style.display = 'flex'
                                     head.querySelector('img').style = 'transform: rotate(0)'

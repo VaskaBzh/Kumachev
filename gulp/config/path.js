@@ -17,6 +17,7 @@ export const path = {
     },
     src: {
         js: `${srcFolder}/js/app.js`,
+        jsContacts: `${srcFolder}/js/appContacts.js`,
         jsProject: `${srcFolder}/js/appProject.js`,
         jsProjects: `${srcFolder}/js/appProjects.js`,
         jsPrivate: `${srcFolder}/js/appPrivate.js`,

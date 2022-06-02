@@ -41,7 +41,6 @@ const validate = () => {
     })
 
     forms.forEach((form, i) => {
-        console.log(form);
         const inputItems = form.querySelectorAll('input[name="name"]')
         inputItems.forEach(input => {
             input.addEventListener('input', e => {

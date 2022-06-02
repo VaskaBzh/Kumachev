@@ -24,6 +24,7 @@ import { scss } from './gulp/tasks/scss.js'
 import { js } from './gulp/tasks/js.js'
 import { jsProjects } from './gulp/tasks/jsProjects.js'
 import { jsMaterials } from './gulp/tasks/jsMaterials.js'
+import { jsContacts } from './gulp/tasks/jsContacts.js'
 import { jsProject } from './gulp/tasks/jsProject.js'
 import { jsPrivate } from './gulp/tasks/jsPrivate.js'
 import { jsFAQ } from './gulp/tasks/jsFAQ.js'
@@ -39,9 +40,10 @@ function watcher() {
     gulp.watch(path.watch.html, html) //gulp.series(html, ftp) / Автоматическая загрузка на ftp
     gulp.watch(path.watch.scss, scss) //gulp.series(scss, ftp)
     gulp.watch(path.watch.js, js) //gulp.series(js, ftp)
+    gulp.watch(path.watch.js, jsContacts) //gulp.series(jsContacts, ftp)
     gulp.watch(path.watch.js, jsProject) //gulp.series(jsProject, ftp)
-    gulp.watch(path.watch.js, jsPrivate) //gulp.series(jsProject, ftp)
-    gulp.watch(path.watch.js, jsMaterials) //gulp.series(jsProject, ftp)
+    gulp.watch(path.watch.js, jsPrivate) //gulp.series(jsPrivate, ftp)
+    gulp.watch(path.watch.js, jsMaterials) //gulp.series(jsMaterials, ftp)
     gulp.watch(path.watch.js, jsProjects) //gulp.series(jsProjects, ftp)
     gulp.watch(path.watch.js, jsFAQ) //gulp.series(jsFAQ, ftp)
     gulp.watch(path.watch.images, images) //gulp.series(images, ftp)
@@ -53,7 +55,7 @@ export { svgSprive }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, jsProject, jsProjects, jsFAQ, jsPrivate, jsMaterials, images))
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, jsProject, jsContacts, jsProjects, jsFAQ, jsPrivate, jsMaterials, images))
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))

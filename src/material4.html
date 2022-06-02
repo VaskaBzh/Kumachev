@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title": "О материале",
+        "script": "js/appProject.min.js"
+    })
+    <body>
+        @@include('html/header.html', {
+            "swiper": "true"
+        })
+        <main>
+            <section class="section about project material" id="about">
+                <div class="container row">
+                    <div class="about__slider row">
+                        <a href="#" class="about__arrow" id="arrow-left"><img src="@img/left.svg" alt="left"></a>
+                        <img src="@img/fasad7.png" alt="slide" class="slide slide_active">
+                        <a href="#" class="about__arrow" id="arrow-right"><img src="@img/right.svg" alt="right"></a>
+                    </div>
+                    <div class="about__block col">
+                        <h2 class="about__title section__title">пенопласт</h2>
+                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et sint perferendis earum, tempora ducimus corrupti sunt asperiores esse qui quas atque cupiditate suscipit, dolor doloremque, voluptatibus praesentium laboriosam. Explicabo, itaque.
+                            </p>
+                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi ratione, labore expedita sint rerum unde deserunt consectetur cumque omnis deleniti quo itaque officia enim sequi tempore recusandae laboriosam corrupti.
+                            </p>
+                    </div>
+                </div>
+                <!-- /.container row -->
+            </section>
+            <!-- /.section about -->
+        </main>
+        @@include('html/footer.html', {
+            "swiper": "true"
+        })
+
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "applicants",
+            "title": "ВАКАНСИИ:"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "consultate",
+            "title": "on-line консультация:"
+        })
+        @@include('html/modal.html', {
+            "services": "master",
+            "otherClass": "master",
+            "title": "Вызовите специалиста сейчас"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "prices",
+            "title": "Прозрачность ценообразования"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "garant",
+            "title": "Гарантийные обязательства"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "design",
+            "title": "ЗАДАЙТЕ ЛЮБЫЕ ИНТЕРЕСУЮЩИЕ ВАС ВОПРОСЫ О ФАСАДЕ И ВСЕХ УСЛУГАХ НАШЕЙ КОМПАНИИ"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "thanks",
+            "title": "спасибо за Ваш выбор! наши специалисты свяжутся с Вами!"
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "main",
+            "title": false
+        })
+        @@include('html/modal.html', {
+            "services": false,
+            "otherClass": "firstModal",
+            "title": "ЗАКАЖИТЕ СМЕТУ ПРЯМО СЕЙЧАС!"
+        })
+        @@include('html/modal.html', {
+            "services": true,
+            "otherClass": "secondModal",
+            "title": "ЗАКАЖИТЕ СМЕТУ ПРЯМО СЕЙЧАС!"
+        })
+    </body>
+</html>

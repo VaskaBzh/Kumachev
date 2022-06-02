@@ -515,14 +515,16 @@ img {
 .navigation__link {
   text-decoration: none;
   color: #fff;
-  font-size: 0.86rem;
+  font-size: 12px;
   font-weight: 300;
 }
 .navigation__head {
   color: #fff;
   width: 100%;
   display: inline-flex;
+  font-size: 14px;
   justify-content: space-between;
+  text-decoration: none;
 }
 .navigation__head_big {
   display: inline-block;
@@ -536,6 +538,9 @@ img {
 }
 .navigation__group .navigation__links:nth-child(1) {
   margin-bottom: 1.43rem;
+}
+.navigation__block .navigation__link {
+  font-size: 14px;
 }
 
 .nav {
@@ -782,6 +787,13 @@ img {
   cursor: default;
 }
 
+.material .about__block {
+  margin-bottom: 0;
+}
+.material .about__slider {
+  margin-bottom: 1rem;
+}
+
 .materials {
   padding: 12.57rem 0 7.64rem;
 }
@@ -811,9 +823,6 @@ img {
 .materials .container .projects__description {
   width: 99%;
 }
-.materials .container .projects__head {
-  cursor: default;
-}
 .materials .container .projects__title {
   cursor: default;
 }
@@ -823,17 +832,17 @@ img {
 .materials__groups {
   max-width: 20%;
   width: 100%;
-  padding: 1rem 0.5rem 5rem;
   box-shadow: -2px 2px 10px 0 rgba(53, 55, 67, 0.4);
   height: 100%;
   margin-right: 2rem;
   border-radius: 6px;
+  padding-bottom: 5rem;
 }
 .materials__groups .section__title {
   line-height: 2.3rem;
-  margin-bottom: 2rem;
+  padding: 1rem 0.5rem 2rem;
 }
-.materials__group {
+.materials__head {
   padding: 1rem 0.2rem;
   font-size: 1.6rem;
   width: 100%;
@@ -842,7 +851,7 @@ img {
   cursor: pointer;
   margin-bottom: 0.7rem;
 }
-.materials__group_active {
+.materials__head_active {
   border-bottom: 3px solid #C89D41;
 }
 .materials__tabs {
@@ -873,6 +882,10 @@ img {
   width: 100%;
   text-decoration: none;
   color: #353743;
+}
+.support__text img {
+  width: 16px;
+  height: 16px;
 }
 
 .business .projects__status {
@@ -917,20 +930,39 @@ img {
 }
 
 .map {
-  padding-top: 5rem;
+  padding-top: 0;
   padding-bottom: 0;
 }
 .map .row {
   align-items: flex-start;
 }
 .map__text {
-  font-size: 1.35rem;
+  font-size: 11px;
+  font-style: italic;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.map__text_town {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+.map__text_name {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+.map__text_contacts {
+  font-size: 12px;
+  font-style: normal;
 }
 .map__block {
   padding-left: 5rem;
   max-width: 40%;
   width: 100%;
+  margin-top: 5rem;
 }
 .map__use {
   max-width: 60%;
@@ -996,13 +1028,13 @@ img {
   position: relative;
 }
 .header__title {
-  font-size: 2.5rem;
+  font-size: 35px;
   font-family: RussoOne;
   font-weight: 400;
   text-transform: uppercase;
 }
 .header__text {
-  font-size: 1.07rem;
+  font-size: 15px;
   font-weight: 400;
   margin: 2.1rem 0 3rem;
   max-width: 29.86rem;
@@ -1103,7 +1135,10 @@ img {
   margin-right: 0.5rem;
 }
 
-.applicantes .modal__text {
+.applicants p {
+  margin-bottom: 1rem;
+}
+.applicants .modal__text {
   margin-bottom: 1rem;
 }
 
@@ -1245,6 +1280,13 @@ img {
   .private .projects__status img {
     height: 20px;
   }
+
+  .header {
+    height: 518px;
+  }
+  .header .slide {
+    padding: 1rem 0 0;
+  }
 }
 @media screen and (max-width: 1100px) {
   .row {
@@ -1351,9 +1393,6 @@ img {
     justify-content: flex-start;
     align-items: center;
   }
-  .map__text {
-    font-size: 1.8rem;
-  }
   .map__block {
     margin-bottom: 1rem;
     max-width: 100%;
@@ -1388,7 +1427,7 @@ img {
     width: 100%;
   }
   .navigation__links {
-    margin: 1rem 0 0;
+    margin: 1rem 0 0 !important;
     width: 100%;
   }
   .navigation__logo {
@@ -1431,9 +1470,6 @@ img {
   .map__use {
     height: 500px;
   }
-  .map__text {
-    font-size: 1.5rem;
-  }
 
   .form {
     width: 95%;
@@ -1465,12 +1501,6 @@ img {
     max-width: 100%;
   }
 
-  .header {
-    height: 38rem;
-  }
-  .header .slide {
-    padding: 1rem 0 0;
-  }
   .header__message {
     bottom: -40%;
   }
@@ -1489,9 +1519,6 @@ img {
 @media screen and (max-width: 560px) {
   .map__use {
     height: 400px;
-  }
-  .map__text {
-    font-size: 1.3rem;
   }
 
   .about__slider {
