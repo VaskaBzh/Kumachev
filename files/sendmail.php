@@ -30,8 +30,10 @@
     $masterTel = $_POST['masterTel'];
     $masterEmail = $_POST['masterEmail'];
     $masterPosition = $_POST['masterPosition'];
-    $telQuestion = $_POST['telQuestion'];
-    $question = $_POST['question'];
+    $designName = $_POST['designName'];
+    $designTel = $_POST['designTel'];
+    $designEmail = $_POST['designEmail'];
+    $designPosition = $_POST['designPosition'];
     $nameConsultate = $_POST['nameConsultate'];
     $telConsultate = $_POST['telConsultate'];
     $emailConsultate = $_POST['emailConsultate'];
@@ -52,9 +54,11 @@
     <p><bold>Номер телефона:</bold> $tel $masterTel</p><br>
     <p><bold>E-mail:</bold> $email $masterEmail</p><br>
     <p><bold>Местонахождение объекта:</bold> $position $masterPosition</p>
-    <h1>Вопрос по фасаду/дизайн!</h1>
-    <p><bold>Номер телефона:</bold> $telQuestion</p><br>
-    <p><bold>Вопрос:</bold> $question</p>
+    <h1>Заказ дизайнa!</h1>
+    <p><bold>Имя:</bold> $designName</p><br>
+    <p><bold>Номер телефона:</bold> $designTel</p><br>
+    <p><bold>E-mail:</bold> $designEmail</p><br>
+    <p><bold>Местонахождение объекта:</bold> $designPosition</p>
     <h1>Dызов специалиста!</h1>
     <p><bold>Имя:</bold> $nameConsultate</p><br>
     <p><bold>Номер телефона:</bold> $telConsultate</p>
