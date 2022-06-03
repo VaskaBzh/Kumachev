@@ -635,6 +635,10 @@ img {
   display: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .about {
   padding: 8.57rem 0 0;
 }
@@ -1253,7 +1257,6 @@ img {
 }
 
 .footer__navigation_fonts .navigation__link {
-  font-size: 0.86rem !important;
   font-weight: 300 !important;
 }
 
@@ -1299,9 +1302,23 @@ img {
   line-height: 120%;
 }
 
+.garant .modal {
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
 .garant .modal__block {
   align-items: flex-start;
   margin-right: 0.5rem;
+}
+
+.garant .modal__block p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.garant .modal__title {
+  margin-bottom: 1.2rem;
 }
 
 .applicants p {
@@ -1310,6 +1327,26 @@ img {
 
 .applicants .modal__text {
   margin-bottom: 1rem;
+}
+
+.applicants .modal__block {
+  position: relative;
+}
+
+.applicants .modal__title a {
+  color: #353743;
+}
+
+.applicants .modal__call {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 5%;
+  bottom: 5%;
+}
+
+.applicants .modal__call img {
+  max-width: 100%;
 }
 
 .modal {
@@ -1335,10 +1372,6 @@ img {
   opacity: 0;
   z-index: -1;
   opacity: 0;
-}
-
-.modal img {
-  max-width: 45%;
 }
 
 .modal__block {
@@ -1412,6 +1445,78 @@ img {
   top: 7%;
   opacity: 0;
   transition-duration: 200ms;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .section__title {
+    font-size: 3.5rem;
+  }
+
+  .about__text {
+    font-size: 1.6rem;
+  }
+
+  .about__block {
+    max-width: 47%;
+  }
+
+  .about__slider {
+    max-width: 47%;
+  }
+
+  .form {
+    max-width: 62rem;
+  }
+
+  .form__input {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    font-size: 1.8rem;
+    max-width: 350px;
+  }
+
+  .navigation__head {
+    font-size: 20px;
+  }
+
+  .navigation__link {
+    font-size: 1.3rem !important;
+  }
+
+  .modal {
+    max-width: 80rem;
+  }
+
+  .header {
+    height: 850px;
+  }
+
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__text {
+    max-width: 50rem;
+    font-size: 25px;
+  }
+
+  .materials__groups .section__title {
+    line-height: 120%;
+  }
+
+  .projects__description p {
+    font-size: 1.2rem;
+  }
+
+  .projects__head {
+    font-size: 1.36rem;
+  }
 }
 
 @media screen and (max-width: 1440px) {
