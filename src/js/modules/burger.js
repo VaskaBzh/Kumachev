@@ -22,7 +22,7 @@ const burger = () => {
         } else if (e.target.closest('[href]')) {
             location.href = e.target.getAttribute('href')
             modalClose()
-        } else if (!e.target.closest('.header__head') || !e.target.closest('.navigation')) {
+        } else if (!e.target.closest('.navigation__head') || !e.target.closest('.navigation')) {
             modalClose()
         }
     })
