@@ -38,7 +38,9 @@ const nav = () => {
         }
     }
 
-    window.onchange = navChanger
+    window.onchange = () => {
+        navChanger()
+    }
     navChanger()
 }
 

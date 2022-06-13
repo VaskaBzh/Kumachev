@@ -38,6 +38,7 @@
     $telConsultate = $_POST['telConsultate'];
     $emailConsultate = $_POST['emailConsultate'];
     $positionConsultate = $_POST['positionConsultate'];
+    $checkboxesTwo = $_POST['checkboxesTwo'];
 
     // Тело письма
     
@@ -54,6 +55,7 @@
     <p><bold>Номер телефона:</bold> $tel $masterTel</p><br>
     <p><bold>E-mail:</bold> $email $masterEmail</p><br>
     <p><bold>Местонахождение объекта:</bold> $position $masterPosition</p>
+    <p><bold>Пожелания:</bold> $checkboxesTwo</p><br>
     <h1>Заказ дизайнa!</h1>
     <p><bold>Имя:</bold> $designName</p><br>
     <p><bold>Номер телефона:</bold> $designTel</p><br>

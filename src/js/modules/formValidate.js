@@ -52,6 +52,22 @@ const validate = () => {
 
         async function formSend(e) {
             e.preventDefault()  
+
+            if (form.querySelector('input[type="checkbox"]')) {
+                const checkboxes = form.querySelector('#hidden')
+                const inputs = form.querySelectorAll('input[type="checkbox"]')
+                const labels = form.querySelectorAll('label')
+                const array = []
+    
+                labels.forEach((label, i) => {
+                    if (inputs[i].checked == true) {
+                        array.push(label.textContent)
+                    }
+                })
+                checkboxes.textContent = array.toString()
+
+                console.log(checkboxes.textContent);
+            }
             
             let error = formValidate(form)
 
@@ -65,9 +81,9 @@ const validate = () => {
                 let response = await fetch('../files/sendmail.php', {
                     method: 'POST', 
                     body: formData,
-                    headers: {
-                        "Content-Type": "application/json"
-                    }
+                    // headers: {
+                    //     "Content-Type": "application/json"
+                    // }
                 })
                 if (response.ok) {
                     let result = await response.json()
